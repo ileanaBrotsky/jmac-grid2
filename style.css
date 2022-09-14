@@ -1,0 +1,466 @@
+:root {
+    --naranja: #CD773A;
+    --cremita: #FFFDF9;
+    --grisClaro: #f1f1f1;
+    --azul: #04122B;
+    --negro: #000000;
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:black;
+    transition: all .5s ease-in-out;
+}
+body{
+    width: 100%;
+}
+header{
+    width: 100%;
+    /* background-color: rgba(117, 192, 31, 0.3); */
+}
+nav{
+    width: 70%;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    /* background-color: rgba(0, 255, 255, 0.3); */
+}
+nav > ul{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul > li{
+    list-style: none;
+}
+nav > ul > .li_nav{
+    list-style: none;
+    margin: 2%;
+    font-weight: bold;
+    border-right:solid 2px var(--naranja);
+    min-width: 6.5rem;  
+}
+nav > ul > li > a{
+    text-decoration: none;  
+}
+nav > ul > .li_nav:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    background-color: var(--cremita)
+}
+h1{
+  font-size: 3rem;
+}
+/*-------------PAGINA EMPRESA----------------*/
+aside{
+    display: none;
+}
+/*---section 1 PRESENTACION EMPRESA---*/
+.section-presentacion-1{
+    display: grid;
+    grid-template-columns:repeat(2,50%);
+    grid-template-areas:
+    "div_slogan-empresa div_img-empresa"
+    ;
+}
+.div_slogan{
+    grid-area: div_slogan-empresa;
+    padding:5% ; 
+    padding-left: 40%;
+   /* background-color: rgba(165, 42, 42, 0.3); */
+} 
+.circulo-fondo{
+    margin-top: 3%;
+    padding-top: 3%;
+    background-color:var(--grisClaro);
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    z-index: -9;
+}
+.slogan{
+   margin: auto;
+   padding: 5%;
+   font-size: 3rem;
+   text-align: center;
+}
+.slogan span{
+   font-size: 3.3rem;
+   font-weight: 900;
+}
+
+.div_img{
+     /* background-color: rgba(42, 44, 165, 0.3); */
+    grid-area: div_img-empresa; 
+    /* filter: drop-shadow(1.25rem .75em 15px rgb(18, 19, 18));  */
+   
+}
+.imagen_redonda{
+    clip-path: ellipse(52% 49% at 100% 51%);
+    width: 100%; 
+    height: auto;
+}
+/*----------------------------------------------------------------*/
+/*---section 2 VALORES EMPRESA---*/
+.section-valores-2{
+    /* background-color: rgba(42, 165, 48, 0.3);   */
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:75% 25%;
+    grid-template-areas:
+    "items-valores titulo-valores";
+    padding-bottom: 5%;
+}
+.titulo-valores{
+    grid-area: titulo-valores;
+    /* background-color: rgba(165, 42, 144, 0.3);   */
+    display: flex;
+    align-items: center;
+}
+.items-valores{
+    grid-area: items-valores;
+    /* background-color: rgba(42, 165, 69, 0.3);   */
+    
+}
+.circulo-naranja{
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: var(--naranja);
+    border-radius: 50%;
+
+}
+.circulo-naranja h1{
+    margin-left: -30px;
+}
+.valor{
+    background-color: var(--grisClaro);
+    border-radius: 5px;
+    margin-bottom: 3%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.valor p{
+    margin-left:18% ;
+    padding-right: 2%;
+    /* background-color: aquamarine; */
+}
+/*----------------------------------------------------------------*/
+/*---section 3 HISTORIA EMPRESA---*/
+.section-historico-3{
+   width: 85%;
+   background-color: var(--grisClaro) ;
+   height: 75vh;
+ 
+}
+.section-historico-3 h1{
+    margin-left:17%;
+    padding-top:1%;
+}
+.organizador p{
+    width: 40%;
+    margin-left:15%;
+    padding-right: 3%;
+}
+.organizador img{
+    width: 50%;
+    height: auto;
+ 
+}
+.organizador{
+display:flex;
+width: 110%;
+justify-content: space-between;
+}
+/*----------------------------------------------------------------*/
+/*---section 4 DIRECCION EMPRESA---*/
+.section-direccion-4{
+    position: relative;
+}
+.section-direccion-4 h1 {
+    padding-left:30%;
+    padding-top: 15%;
+  }
+.circulo-naranja-grande{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--naranja);
+    z-index: -9;
+    margin-top:5%;
+    padding-left: 15%;
+    position: absolute;
+    z-index: -19;
+}
+
+.organizador-direccion{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    
+}
+.div-persona{
+    display: flex;
+    width: 25%;
+    padding: 3%;
+    flex-direction: column;
+    /* background-color: aqua; */
+    margin: 3%;
+    border-radius: 15px;
+    background-color: var(--grisClaro);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.foto-persona{
+    margin-bottom: 3%;
+    border-radius: 15px 15px 0 0;
+}
+.div-persona h4{
+    padding-top: 5%;
+}
+.iconos-contacto{
+    padding-top: 3%;
+}
+.iconos-contacto img{
+width: 1rem;
+}
+
+/*----------------------------------------------------------------*/
+/*---section 5 ESTADISTICAS EMPRESA---*/
+.section-estadisticas-5{
+    
+}
+/*-------------------dispositivos pequenios-----------------*/
+/*LARGE*/
+@media screen and (max-width: 890px){
+    header{
+        display: none;
+    }
+    aside{
+        margin-left: 30%;
+        display: block;
+        grid-area: aside;
+        /* background-color: rgba(127, 204, 127, 0.3);   */
+    }
+    .section-presentacion-1{
+        grid-template-columns:20% 20% 60%;
+        grid-template-areas:
+        "aside div_slogan-empresa div_img-empresa";
+    }    
+    nav{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;    
+    }
+    nav>ul{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    nav>ul> li{
+        padding: 5%;
+    }
+    nav>ul>.li_nav{
+        border-bottom: solid 2px var(--naranja);
+        margin-bottom: 5%;
+        border-radius: 5px;
+    }
+    .div_slogan{
+        padding-left: 35%;
+        padding-top: 35%;
+    }
+    .circulo-fondo{
+        width: 150px;
+        height: 150px; 
+    }
+    .slogan{
+        font-size: 1rem;
+         text-align: center;
+    }
+     .slogan span{
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    nav img{
+        margin-bottom: 25%;
+    }
+    .div_img{
+        padding-top: 5%;
+    }
+    .imagen_redonda{
+       width: 130%;
+       margin-left: -30%;
+    }
+
+    .section-valores-2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:25% 75% ;
+        grid-template-areas:
+        "titulo-valores"
+        "items-valores ";
+    }
+    .valor{
+        margin: 0 5% 3% 5% ;
+    }
+    .valor img{
+        width: 100px;
+    }
+    .organizador-direccion{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "uno dos"
+        "tres cuatro";
+        width: 70%;
+        padding-top: 3%;
+        margin: auto;
+        /* background-color: chartreuse;
+         */
+    }
+    .div-persona{
+        width: 80%;
+    }
+    .uno{
+        grid-area: uno;
+    }
+    .dos{
+        grid-area: dos;
+    }
+    .tres{
+        grid-area: tres;
+    }
+    .cuatro{
+        grid-area: cuatro;
+    }
+}
+
+@media screen and (max-width: 598px){
+    .div_slogan{
+        padding-left: 30%;
+        padding-top: 45%;
+    }
+    .circulo-fondo{
+        width: 150px;
+        height: 150px;
+    }
+    .slogan{
+        font-size: 1rem;
+        text-align: center;
+    }
+     .slogan span{
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+    .circulo-naranja{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 3%;
+    }
+    .valor p{
+        margin-left:3% ;
+        padding-right: 2%;
+       
+    }
+    .section-historico-3{
+        width: 100%;
+        height: max-content;
+    }
+    .section-historico-3 h1{
+        margin: 0;
+        text-align: center;
+        
+    }
+    .organizador{
+        width: 100%;
+        flex-direction: column;
+       
+    }   
+    .organizador p{
+        width: 100%;
+        margin:0;
+        padding: 2% 7%;
+        text-align: justify;
+      
+    }
+    .organizador img{
+        width: 100%;
+        margin:0;
+        padding: 7%;
+        text-align: center;
+    }
+    .organizador-direccion{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-persona{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .foto-persona{
+        width: 25%;
+        margin-bottom: 0%;
+        border-radius: 15px  0 0 15px;
+    }
+}
+    /*SMALL Y EXTRASMALL*/
+@media screen and (max-width: 474px){
+    
+    .div_slogan{
+        padding-left: 80%;
+        padding-top: 70%;
+    }
+    .circulo-fondo{
+        width: 100px;
+        height: 100px;
+      
+    }
+    .slogan{
+        font-size: 0.8rem;
+        text-align: center;
+     }
+     .slogan span{
+        font-size: 1rem;
+        font-weight: 900;
+      }
+      .div_img{
+        padding-top: 45%;
+    }
+    .imagen_redonda{
+       width: 170%;
+       margin-left: -70%;
+    }
+    h1{
+       font-size:2rem;
+    }
+    p{
+        font-size:0.8rem; 
+    }
+    .circulo-naranja-grande{
+        width: 300px;
+        height: 300px;
+    }
+    .section-historico-3{
+        margin-top: 3%;
+        padding-top: 3%;
+    }
+}
+@media screen and (max-width: 340px){
+    .div_slogan{
+       visibility: hidden;
+    }
+}
