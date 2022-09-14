@@ -2,6 +2,7 @@
     --naranja: #CD773A;
     --cremita: #FFFDF9;
     --grisClaro: #f1f1f1;
+    --grisOscuro: #C5C6C6;
     --azul: #04122B;
     --negro: #000000;
   }
@@ -239,8 +240,40 @@ width: 1rem;
 /*----------------------------------------------------------------*/
 /*---section 5 ESTADISTICAS EMPRESA---*/
 .section-estadisticas-5{
-    
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
 }
+.div-estadisticas{
+  padding-left: 20%;
+    padding-top: 10%;
+}
+.fondogris-rect{
+width: 70%;
+height: 100vh;
+background-color: var(--grisOscuro);
+z-index: -20;
+}
+.img-flotante{
+position: absolute;
+z-index: -19;
+margin-left: 15%;
+
+width: 60%;
+}
+.img-flotante img{
+    margin-top:2%;
+    width: 100%;
+}
+.estadistica{
+    display:flex;
+    margin-bottom: 3%;
+}
+.estadistica h1{
+   padding-right: 2%;
+}
+
 /*-------------------dispositivos pequenios-----------------*/
 /*LARGE*/
 @media screen and (max-width: 890px){
